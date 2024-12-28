@@ -1,128 +1,205 @@
+/* Contact Container */
 .contact-container {
-    background: #ccb9b9;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    animation: fadeInUp 1.2s ease-out;
-  }
+  background: #ccb9b9;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1.2s ease-out;
+}
 
-  /* Header */
-  .contact-header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+/* Header */
+.contact-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  /* Description */
-  .contact-description {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    font-style: italic;
-  }
+/* Description */
+.contact-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-style: italic;
+}
 
-  /* Form Styling */
-  .contact-form {
-    background: #ffffff;
+/* Form Styling */
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Form Label */
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Form Control */
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+}
+
+/* Focused Form Control */
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 70%;
+  padding: 12px;
+  background-color: rgb(185, 131, 37);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(81, 73, 60);
+}
+
+/* Google Sign-Up Section */
+.google-signup {
+  margin-top: 30px;
+}
+
+.sign-up-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+/* Google Sign-Up Button */
+.btn-google {
+  background-color: #f44242;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-google:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .contact-container {
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
   }
 
-  .contact-form .form-label {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 8px;
+ 
+  .contact-header {
+    font-size: 2rem;
   }
 
-  .contact-form .form-control {
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-  }
-
-  .contact-form .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
-  }
-
-  .submit-btn {
-    width: 70%;
-    padding: 12px;
-    background-color: rgb(185, 131, 37);
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 30px;
-  }
-
-  .submit-btn:hover {
-    background-color: rgb(81, 73, 60);
-  }
-
-  /* Google Sign-Up */
-  .google-signup {
-    margin-top: 30px;
-  }
-
-  .sign-up-text {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 10px;
-    text-decoration: none;
-  }
-
-  .btn-google {
-    background-color: #f44242;
-    color: white;
-    width: 100%;
-    padding: 12px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .btn-google:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Animations */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+ 
+  .contact-form {
+    padding: 20px;
   }
 
   
+  .contact-form .form-control {
+    width: 100%;
+  }
+
+  
+  .submit-btn {
+    width: 100%;
+  }
+
+  
+  .btn-google {
+    width: 100%;
+  }
+
+  
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  
+  .contact-form .form-control {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .contact-header {
+    font-size: 1.8rem;
+  }
+
+  
+  .contact-description {
+    font-size: 0.95rem;
+  }
+
+  
+  .contact-form .form-control {
+    padding: 8px;
+  }
+
+  
+  .submit-btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  
+  .btn-google {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

@@ -140,7 +140,7 @@ body {
   color: #dc3545;
 }
 
-.featured-cats-container{
+.featured-cats-container {
   background-color: #a2a881;
   margin-top: 50px;
 }
@@ -159,3 +159,55 @@ body {
   animation: fadeIn 2s ease-out;
 }
 
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .lead-text {
+    font-size: 1.1rem;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .cat-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .cat-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .lead-text {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cat-name {
+    font-size: 1.25rem;
+  }
+
+  .cat-info p {
+    font-size: 1rem;
+  }
+}
