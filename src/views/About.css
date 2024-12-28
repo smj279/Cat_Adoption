@@ -1,0 +1,140 @@
+.about-container {
+    background: #ccb9b9;
+    padding: 70px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+   
+  }
+
+  .about-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .about-introduction {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  /* Mission Section */
+  .mission-section .mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mission-section p {
+    font-size: 1.1rem;
+    color:#555;
+    line-height: 1.8;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 50px;
+  }
+
+  .mission-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+
+  /* Values Section */
+  .values-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+
+  }
+
+  .value-item {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(79, 11, 51, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .value-item:hover {
+    transform: scale(1.05);
+  }
+
+  .value-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  .value-item h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .value-item p {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Adoption Process */
+  .adoption-process-section {
+    margin-bottom: 40px;
+  }
+
+  .adoption-process {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 90px;
+  }
+
+  .adoption-process li {
+    margin-bottom: 20px;
+  }
+
+  /* Gallery Section */
+  .section-title{
+    margin-bottom: 40px;
+  }
+  .gallery-section {
+    margin-bottom: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  
