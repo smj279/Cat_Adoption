@@ -92,15 +92,4 @@ body {
     margin-top: 20px;
   }
   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .search-filter .form-control,
-    .search-filter .form-select {
-      width: 80%;
-    }
-  
-    .cat-card {
-      margin: 0 10px;
-    }
-  }
   

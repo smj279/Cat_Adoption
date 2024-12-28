@@ -3,10 +3,23 @@ import { useEffect, useState } from 'react';
 
 const availableCats = [
   { name: 'Whiskers', age: 2 },
-  { name: 'Mittens', age: 1 },
-  { name: 'Shadow', age: 3 },
-  { name: 'Luna', age: 4 },
+  { name: 'Mittens', age: 2 },
+  { name: 'Shadow', age: 1 },
+  { name: 'Luna', age: 2 },
   { name: 'Simba', age: 2 },
+  { name: 'Bella', age: 3 },  
+  { name: 'Coco', age: 1 },   
+  { name: 'Leo', age: 4 },    
+  { name: 'Nala', age: 2 },   
+  { name: 'Tiger', age: 1 },  
+  { name: 'Max', age: 2 },  
+  { name: 'Zara', age: 3 },  
+  { name: 'Oliver', age: 1 },  
+  { name: 'Tom', age: 2 },  
+  { name: 'Snowball', age: 3 },  
+  { name: 'Fluffy', age: 4 },  
+  { name: 'Jarry', age: 4 },  
+  { name: 'Meo', age: 1 },  
 ];
 
 export default function AvailableCats() {
@@ -16,7 +29,6 @@ export default function AvailableCats() {
   const [ageFilter, setAgeFilter] = useState('All');
 
   useEffect(() => {
-    // Fetch cat images from an API endpoint and assign them to the cats list
     const fetchCatImages = async () => {
       try {
         const responses = await Promise.all(
@@ -31,7 +43,7 @@ export default function AvailableCats() {
         }));
 
         setCats(catsWithImages);
-        setFilteredCats(catsWithImages); // Initially show all cats
+        setFilteredCats(catsWithImages); 
       } catch (error) {
         console.error('Error fetching cat images:', error);
       }
@@ -40,7 +52,6 @@ export default function AvailableCats() {
     fetchCatImages();
   }, []);
 
-  // Filter cats based on search input and age filter
   useEffect(() => {
     let filtered = cats.filter((cat) =>
       cat.name.toLowerCase().includes(search.toLowerCase())
@@ -58,7 +69,7 @@ export default function AvailableCats() {
       <h2>Available Cats</h2>
       <p>Meet our adorable cats looking for their forever home!</p>
 
-      {/* Search and Filter */}
+{/* Search and Filter */}
       <div className="search-filter">
         <input
           type="text"
